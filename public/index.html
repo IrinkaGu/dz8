@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Пример чата анонимных математиков</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="pages">
+    <li class="chat page">
+      <div class="chatArea">
+        <ul class="messages"></ul>
+      </div>
+      <input class="inputMessage" placeholder="логин"/>
+    </li>
+    <li class="login page">
+		<div class="form">
+			<h2 class="title">Чат анонимный математиков</h2>
+			<h3 class="title">Введите логин</h3>
+			<input class="usernameInput" type="text" maxlength="14" /><br><br>
+			<h3 class="title">Выберите тему чата</h3>
+			<select id="room">
+				<option value="1">В математике почти нету прямых кривых и совсем нету кривых прямых</option>
+				<option value="2">Ключевой вопрос математики: «Не все ли равно?»</option>
+				<option value="3">Пицца радиусом "ц" и толщиной "а" имеет объём: V= пи*ц*ц*а</option>
+				<option value="4">Мой лучший результат в беге на три километра - двести метров</option>
+			</select>
+      </div>
+    </li>
+  </ul>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>
